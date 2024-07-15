@@ -27,7 +27,7 @@ def game_calc():
                 f"'{answer}' is wrong answer ;(. "
                 f"Correct answer was '{correct_result}'."
             )
-            print(f"Let's try again, {user_name}!")  # <- Правильный отступ
+            print(f"Let's try again, {user_name}!")
             break
     if correct_answers == 3:
         print(f"Congratulations, {user_name}!")
