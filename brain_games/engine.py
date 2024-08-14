@@ -3,7 +3,7 @@ from brain_games.const import NUM_OF_ROUNDS
 
 
 def start_game(instruction, get_answer_and_question):
-    user_name = prompt.string("Welcome to the Brain Games!\n "
+    user_name = prompt.string("Welcome to the Brain Games!\n"
                               "May I have your name? ")
     print(f"Hello, {user_name}!\n"
           f"{instruction}")
