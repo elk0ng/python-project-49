@@ -1,8 +1,10 @@
 import random
 from brain_games.engine import start_game, get_random_num
 
+
 CALC_INSTRUCTION = "What is the result of the expression?"
 OPERATIONS = ["+", "-", "*"]
+
 
 def calculate(num1, operation, num2):
     if operation == "+":

@@ -4,6 +4,7 @@ from brain_games.engine import start_game, get_random_num
 PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
                     'Otherwise answer "no".'
 
+
 def is_prime(num):
     divider = 2
     while num % divider != 0:

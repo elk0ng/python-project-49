@@ -5,6 +5,7 @@ PROGRESSION_INSTRUCTION = "What number is missing in " \
                           "the progression?"
 PROGRESSION_LENGTH = 10
 
+
 def get_progression_and_hidden_num():
     start, step = get_random_num(1, 20), get_random_num(1, 20)
     progression = generate_progression(start, step, PROGRESSION_LENGTH)
