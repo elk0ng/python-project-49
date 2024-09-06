@@ -1,7 +1,9 @@
-from brain_games.const import PROGRESSION_INSTRUCTION, PROGRESSION_LENGTH
-from brain_games.engine import start_game
-from brain_games.utils import get_random_num
+from brain_games.engine import start_game, get_random_num
 
+
+PROGRESSION_INSTRUCTION = "What number is missing in " \
+                          "the progression?"
+PROGRESSION_LENGTH = 10
 
 def get_progression_and_hidden_num():
     start, step = get_random_num(1, 20), get_random_num(1, 20)

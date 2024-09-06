@@ -1,5 +1,12 @@
 import prompt
-from brain_games.const import NUM_OF_ROUNDS
+import random
+
+
+def get_random_num(a=1, b=100):
+    return random.randint(a, b)
+
+
+NUM_OF_ROUNDS = 3
 
 
 def start_game(instruction, get_answer_and_question):

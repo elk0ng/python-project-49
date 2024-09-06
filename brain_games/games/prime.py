@@ -1,13 +1,14 @@
-from brain_games.const import PRIME_INSTRUCTION
-from brain_games.engine import start_game
-from brain_games.utils import get_random_num
+from brain_games.engine import start_game, get_random_num
 
 
-def is_prime(n):
-    d = 2
-    while n % d != 0:
-        d += 1
-    return d == n
+PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
+                    'Otherwise answer "no".'
+
+def is_prime(num):
+    divider = 2
+    while num % divider != 0:
+        divider += 1
+    return divider == num
 
 
 def get_num_and_prime_ans():
