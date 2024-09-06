@@ -1,4 +1,9 @@
-from brain_games.engine import start_game, get_random_num
+from brain_games.engine import start_game
+import random
+
+
+def get_random_num(a=1, b=100):
+    return random.randint(a, b)
 
 
 PROGRESSION_INSTRUCTION = "What number is missing in " \

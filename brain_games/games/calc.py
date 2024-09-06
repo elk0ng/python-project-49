@@ -1,5 +1,9 @@
+from brain_games.engine import start_game
 import random
-from brain_games.engine import start_game, get_random_num
+
+
+def get_random_num(a=1, b=20):
+    return random.randint(a, b)
 
 
 CALC_INSTRUCTION = "What is the result of the expression?"
