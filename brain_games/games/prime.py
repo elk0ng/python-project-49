@@ -5,11 +5,11 @@ PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
                     'Otherwise answer "no".'
 
 
-def is_prime(num):
+def is_prime(number):
     divider = 2
-    while num % divider != 0:
+    while number % divider != 0:
         divider += 1
-    return divider == num
+    return divider == number
 
 
 def get_num_and_prime_ans():
