@@ -20,10 +20,9 @@ _____
 - make package-install
 
 # Примеры установки и работы игр
-[![asciicast](https://asciinema.org/a/NzsgPzyZATMQ5ieDKJIp4y8Jw.svg)](https://asciinema.org/a/NzsgPzyZATMQ5ieDKJIp4y8Jw)
-![brain-calc!](https://asciinema.org/a/NzsgPzyZATMQ5ieDKJIp4y8Jw "brain-calc")
-![brain-even!](https://asciinema.org/a/hEiAc0fzcvZRWtDsQVn3CUODZ "brain-even")
-![brain-gcd!](https://asciinema.org/a/SBjwqJ6tuuQaQhKf7xsC4Afcy "brain-gcd")
-![brain-prime!](https://asciinema.org/a/27sg594NugaLXWL2AEIDnys22 "brain-prime")
-![brain-progression!](https://asciinema.org/a/B4OG7Xbik35SnR3Azd8kHR2PB "brain-progression")
+[![brain-calc](https://asciinema.org/a/NzsgPzyZATMQ5ieDKJIp4y8Jw.svg)](https://asciinema.org/a/NzsgPzyZATMQ5ieDKJIp4y8Jw)
+[![brain-even](https://asciinema.org/a/hEiAc0fzcvZRWtDsQVn3CUODZ.svg)](https://asciinema.org/a/hEiAc0fzcvZRWtDsQVn3CUODZ)
+[![brain-gcd](https://asciinema.org/a/SBjwqJ6tuuQaQhKf7xsC4Afcy.svg)](https://asciinema.org/a/SBjwqJ6tuuQaQhKf7xsC4Afcy)
+[![brain-prime](https://asciinema.org/a/27sg594NugaLXWL2AEIDnys22.svg)](https://asciinema.org/a/27sg594NugaLXWL2AEIDnys22)
+[![brain-progression](https://asciinema.org/a/B4OG7Xbik35SnR3Azd8kHR2PB.svg)](https://asciinema.org/a/B4OG7Xbik35SnR3Azd8kHR2PB)
 
