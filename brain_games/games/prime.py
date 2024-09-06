@@ -13,8 +13,8 @@ def is_prime(number):
 
 
 def get_num_and_prime_ans():
-    num = get_random_num(1, 20)
-    answer = 'yes' if is_prime(num) else 'no'
+    number = get_random_num(1, 20)
+    answer = 'yes' if is_prime(number) else 'no'
     return str(num), answer
 
 
