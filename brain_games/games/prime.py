@@ -1,14 +1,10 @@
-from brain_games.engine import start_game
 import random
-
-
-def get_random_num(a=1, b=20):
-    return random.randint(a, b)
 
 
 PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
                     'Otherwise answer "no".'
-
+MIN_NUMBER = random.randint(1, 20)
+MAX_NUMBER = random.randint(1, 20)
 
 def is_prime(number):
     divider = 2
@@ -22,6 +18,3 @@ def get_num_and_prime_ans():
     answer = 'yes' if is_prime(num) else 'no'
     return str(num), answer
 
-
-def start_game_prime():
-    start_game(PRIME_INSTRUCTION, get_num_and_prime_ans)

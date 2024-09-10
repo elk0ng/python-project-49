@@ -1,29 +1,23 @@
-from brain_games.engine import start_game
 import random
-
-
-def get_random_num(a=1, b=100):
-    return random.randint(a, b)
-
 
 PROGRESSION_INSTRUCTION = "What number is missing in " \
                           "the progression?"
 PROGRESSION_LENGTH = 10
+MIN_NUMBER = random.randint(1, 50)
+MAX_NUMBER = random.randint(50, 100)
 
 
 def get_progression_and_hidden_num():
-    start, step = get_random_num(1, 20), get_random_num(1, 20)
-    progression = generate_progression(start, step, PROGRESSION_LENGTH)
-    hidden_index = get_random_num(0, PROGRESSION_LENGTH - 1)
-    hidden_num = progression[hidden_index]
-    progression[hidden_index] = '..'
-    pg_with_hidden_num = ' '.join(map(str, progression))
-    return pg_with_hidden_num, str(hidden_num)
+    start, step = MIN_NUMBER, MIN_NUMBER
+    hidden_index = MAX_NUMBER(0, PROGRESSION_LENGTH - 1)
+    progression = generate_progression(start, step, PROGRESSION_LENGTH, hidden_index)
+    hidden_num = start + step * hidden_index
+    return progression, str(hidden_num)
 
 
-def generate_progression(start, step, length):
-    return [start + step * i for i in range(length)]
+def generate_progression(start, step, length, hidden_index=None):
+    progression = [start + step * i for i in range(length)]
+    if hidden_index is not None:
+        progression[hidden_index] = '..'
+    return ' '.join(map(str, progression))
 
-
-def start_game_progression():
-    start_game(PROGRESSION_INSTRUCTION, get_progression_and_hidden_num)
