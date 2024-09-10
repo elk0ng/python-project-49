@@ -3,8 +3,8 @@ import random
 
 CALC_INSTRUCTION = "What is the result of the expression?"
 OPERATIONS = ["+", "-", "*"]
-MIN_NUMBER = random.randint(1, 20)
-MAX_NUMBER = random.randint(1, 20)
+MIN_NUMBER = 1
+MAX_NUMBER = 20
 
 
 def calculate(num1, operation, num2):
@@ -17,7 +17,7 @@ def calculate(num1, operation, num2):
 
 
 def get_calc_and_result():
-    num1, num2 = MIN_NUMBER, MAX_NUMBER
+    num1, num2 = random.randint(MIN_NUMBER, MAX_NUMBER), random.randint(MIN_NUMBER, MAX_NUMBER)
     rand_operation = random.choice(OPERATIONS)
     math_expression = f'{num1} ' \
                       f'{rand_operation} {num2}'

@@ -1,5 +1,4 @@
 import prompt
-import random
 
 
 NUM_OF_ROUNDS = 3
