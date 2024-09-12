@@ -14,4 +14,3 @@ def get_num_and_even_ans():
     num = random.randint(1, MAX_NUMBER)
     answer = 'yes' if is_even(num) else 'no'
     return num, answer
-

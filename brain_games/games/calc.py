@@ -17,10 +17,10 @@ def calculate(num1, operation, num2):
 
 
 def get_calc_and_result():
-    num1, num2 = random.randint(MIN_NUMBER, MAX_NUMBER), random.randint(MIN_NUMBER, MAX_NUMBER)
+    num1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+    num2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     rand_operation = random.choice(OPERATIONS)
     math_expression = f'{num1} ' \
                       f'{rand_operation} {num2}'
     result = calculate(num1, rand_operation, num2)
     return math_expression, str(result)
-
