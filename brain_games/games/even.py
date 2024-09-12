@@ -3,7 +3,7 @@ import random
 
 EVEN_INSTRUCTION = 'Answer "yes" if the number is even, ' \
                    'otherwise answer "no".'
-MAX_NUMBER = random.randint(1, 20)
+MAX_NUMBER = 20
 
 
 def is_even(num):
