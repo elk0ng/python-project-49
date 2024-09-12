@@ -6,10 +6,14 @@ PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
 MAX_NUMBER = 20
 
 def is_prime(number):
+    if number < 2:
+        return False
     divider = 2
-    while number % divider != 0:
+    while divider * divider <= number:
+        if number % divider == 0:
+            return False
         divider += 1
-    return divider == number
+    return True
 
 
 def get_num_and_prime_ans():
